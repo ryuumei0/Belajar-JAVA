@@ -10,7 +10,7 @@ public class Logika {
 		c = a || b;
 		
 		System.out.println("============== or =============");
-		System.out.println(a + " || "+ b + " ----> "+ c);
+		System.out.println(a + " || "+ b + " ----> "+ c); // akan bernilai true jika salah satu bernilai true
 		a = true;
 		b = true;
 		c = a || b;
@@ -26,7 +26,7 @@ public class Logika {
 		b = false;
 		c = a && b; 
 		System.out.println("============== and =============");
-		System.out.println(a + " && "+ b + " ----> "+ c);
+		System.out.println(a + " && "+ b + " ----> "+ c);// akan bernilai true jika semuanya bernilai true
 		a = true;
 		b = true;
 		c = a && b;
@@ -37,7 +37,7 @@ public class Logika {
 		System.out.println(a + " && "+ b + " ----> "+ c);
 		System.out.println();
 		
-		System.out.println("============== xor =============");
+		System.out.println("============== xor =============");// akan bernilai true jika ada true dan false
 		a = true;
 		b = false;
 		c = a ^ b; 
@@ -53,7 +53,7 @@ public class Logika {
 		
 		System.out.println();
 		
-		System.out.println("============== Not =============");
+		System.out.println("============== Not =============");// akan bernilai berkebalikan dari nilai sebelumnya
 		a = true;
 		b = false;
 		c = !a; 

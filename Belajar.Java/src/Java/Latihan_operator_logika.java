@@ -1,7 +1,7 @@
 package Java;
 import java.util.Scanner;
 
-public class Latihan_aritmatika {
+public class Latihan_operator_logika {
 	
 	public static void main(String[] args) {
 	Scanner userInput = new Scanner(System.in);

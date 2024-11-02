@@ -16,20 +16,20 @@ public class while_loop {
 			y = 1;
 			while (y <= x) {
 				System.out.print(y + ", ");
-				y += 1;
+				y ++;
 			}
 			System.out.println();
-			x += 1;
+			x ++;
 		}
 		 x = 1;
 		while (a >= x ) {
 			y = a;
 			while (y >= x) {
 				System.out.print(y + ", ");
-				y -= 1;
+				y --;
 			}
 			System.out.println();
-			a -= 1;
+			a --;
 		}
 	}
 

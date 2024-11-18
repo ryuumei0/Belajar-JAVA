@@ -26,6 +26,16 @@ public class latihan_array {
 		}
 		printarray(hasil2,"hasil2");
 		
+//		mengurutkan dari belakang
+		int [] balikarray = new int[hasil2.length];
+
+		int a = 0;
+		for(int i = hasil2.length; i > 0; i--) {
+			balikarray[i-1] = hasil2[a];
+			a++;
+		}
+		printarray(balikarray,"balikarray");
+		
 	}
 	public static void printarray(int [] array, String massage) {
 		System.out.println(massage + " = " + Arrays.toString(array));

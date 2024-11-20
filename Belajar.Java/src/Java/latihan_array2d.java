@@ -19,7 +19,6 @@ public class latihan_array2d {
 		
 		jumlah(matriks_A, matriks_B);
 		
-		kali(matriks_A, matriks_B);
 		
 	}
 		
@@ -43,27 +42,5 @@ public class latihan_array2d {
 			
 		}
 		
-		private static void kali(int[][] matriks, int[][] matriks1) {
-			int baris = matriks.length;
-			int kolom = matriks[0].length;
-			
-			int [][] hasil = new int [2][2];
-			
-			int f = 0; 
-			
-			if(baris / kolom == 0 || kolom / baris == 0) {
-				for(int a = 0; a < matriks.length; a++) {
-					for(int b = 0; b < matriks1[a].length;b++){
-						int e = matriks[a][b] * matriks1[a][b];
-						for(int c = 0; c < hasil.length;c++) {
-							for(int d = 0;d < hasil[c].length;d++) {
-								hasil[c][d] = f + e;
-								f = hasil[c][d]; 
-							}
-						}
-					}
-				}
-			}
-		}
 	}
 

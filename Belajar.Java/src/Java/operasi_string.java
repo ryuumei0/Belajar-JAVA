@@ -35,6 +35,14 @@ public class operasi_string {
 		kata = kalimat.replace("ikan", "ayam");
 		System.out.print(kata);
 		
+		//komparasi
+		System.out.println();
+		String mobil1 = "honda";
+		String mobil2 = "suzuki";
+		
+		System.out.println(mobil1.compareTo(mobil2));//jarak antara huruf awal (s ==> h)
+		System.out.println(mobil2.compareTo(mobil1));//jarak anatar huruf awal
+
 		//persamaan
 		System.out.println("==== persamaan =====");
 //		String katainput = "test"; // ini ada di string pool
@@ -52,11 +60,14 @@ public class operasi_string {
 		
 		System.out.println("input = " + katainput2);
 		
+		//dengan .equals
+		
 		if(katainput2.equals(katakata)) {
 			System.out.println("sama");
 		}else {
 			System.out.println("tidak sama");
 		}
+		
 	}
 	
 	

@@ -7,16 +7,53 @@ public class stringbuilder {
 		// TODO Auto-generated method stub
 		
 		StringBuilder builder = new StringBuilder("hallo");
-		System.out.println("data = " + builder);
-		System.out.println("panjang = " + builder.length());
-		System.out.println("kapasitas = "+ builder.capacity());
-		
-		int addres = System.identityHashCode(builder);
-		
-		System.out.println("addrea = " + Integer.toHexString(addres));
+		printdata(builder);
 		
 		//operasi string builder
 		//append
+		builder.append(" teman");
+		printdata(builder);
+		
+		builder.append(" teman");
+		printdata(builder);
+		
+//		//insert
+		builder.insert(11, " -");
+		printdata(builder);
+		
+		
+		//dellet
+		builder.delete(11, 13);
+		printdata(builder);
+		
+		//mrubah char pada index
+		builder.setCharAt(0, 'y');
+		printdata(builder);
+		
+		//replace
+		builder.replace(12, 17, "yono");
+		printdata(builder);
+		
+		//reverse
+		builder.reverse();
+		printdata(builder);
+		
+		//casting menjadi string
+		String kalimat = builder.toString();
+		int addres = System.identityHashCode(kalimat);
+		System.out.println(Integer.toHexString(addres));
+		
 	}
-
+	
+	private static void printdata(StringBuilder data) {
+		
+		System.out.println("============================");
+		System.out.println("data = " +data);
+		System.out.println("panjang = " + data.length());
+		System.out.println("kapasitas = "+ data.capacity());
+		
+		int addres = System.identityHashCode(data);
+		System.out.println("addres = " + Integer.toHexString(addres));
+		
+	}
 }  

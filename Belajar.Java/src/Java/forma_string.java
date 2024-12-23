@@ -1,5 +1,7 @@
 package Java;
 
+import java.util.Formatter;
+
 public class forma_string {
 
 	public static void main(String[] args) {
@@ -45,13 +47,25 @@ public class forma_string {
 		//foalting point
 		System.out.println("=========== width ===============");
 		float float1 = 1.433f;
-		System.out.printf("%+6f", float1);
+		System.out.printf("%+6f\n", float1);
 		
 		///. precision
 		System.out.println("======== precision ========");
 		float qq = 3.14266f;
 		System.out.printf("%.2f\n", qq);
 		System.out.printf("%f",qq);
+		
+		//save ke dalam varible string
+		nama = "agus";
+		float ipk = 92.335532f; 
+		String format = String.format("nama siswa : %s \nrata-rata : %.1f", nama,ipk);
+		System.out.println(format);
+		
+		///save di string builder
+		StringBuilder buider = new StringBuilder();
+		Formatter formatBuilder = new Formater(builder);
+		
+		formatBuilder.format("=====denan builder ===/n nama siswa : %s \nrata-rata : %.1f", nama,ipk);
 	}
 
 }

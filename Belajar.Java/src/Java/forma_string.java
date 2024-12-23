@@ -47,6 +47,11 @@ public class forma_string {
 		float float1 = 1.433f;
 		System.out.printf("%+6f", float1);
 		
+		///. precision
+		System.out.println("======== precision ========");
+		float qq = 3.14266f;
+		System.out.printf("%.2f\n", qq);
+		System.out.printf("%f",qq);
 	}
 
 }

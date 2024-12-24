@@ -11,6 +11,7 @@ public static void main(String[] args) {
 	int index = input.nextInt();
 	
 	//exception handling (try, catch, and finally)
+	System.out.println("-handling out of bounds-");
 	try {
 		System.out.printf("indeks ke- %d adalah %d",index, array[index]);
 	}catch (Exception e){
@@ -18,6 +19,7 @@ public static void main(String[] args) {
 	}
 	
 	 //io exception 
+	System.out.println("-handling ioexception-");
 	FileInputStream fileinput = null;
 	try {
 		fileinput = new FileInputStream("input.txt");
@@ -26,6 +28,7 @@ public static void main(String[] args) {
 	}
 	
 	///menggabungkan 2 exception 
+	System.out.println("-menggabungkan 2 exception-");
 	try {
 		System.out.printf("indeks ke- %d adalah %d",index, array[index]);
 		fileinput = new FileInputStream("input.txt");		
@@ -34,6 +37,19 @@ public static void main(String[] args) {
 	}catch(IOException e) {
 		System.err.println("file tidak ditemukan.");
 	}
+	
+	//finally
+	try {
+		System.out.printf("indeks ke- %d adalah %d",index, array[index]);		
+	}catch (ArrayIndexOutOfBoundsException e) {
+		System.err.println("keluar dari jumlah array");
+	}finally {
+		System.out.println("finaly");
+	}
+	
+	
+	System.out.println("- finnaly -");
+	
 	
 	
 	System.out.println("ini adalah akhir dari program.");

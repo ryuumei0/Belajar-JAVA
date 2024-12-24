@@ -39,6 +39,4 @@ public class array_multi_dimensi {
 		}
 		
 			}
-		}
 	}
-}

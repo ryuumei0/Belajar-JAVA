@@ -63,8 +63,8 @@ public class forma_string {
 		
 		///save di string builder
 		StringBuilder buider = new StringBuilder();
-		Formatter formatBuilder = new Formater(builder);
-		
+//		Formatter formatBuilder = new Formater(builder);
+
 		formatBuilder.format("=====denan builder ===/n nama siswa : %s \nrata-rata : %.1f", nama,ipk);
 	}
 
